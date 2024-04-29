@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> mesesDelAno = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+ 
+        for (let i = 0; i < mesesDelAno.length; i++) {
+            console.log(mesesDelAno[i])
+        }
+
+        //Otra forma de hacer una para(for in)
+        for (const i in mesesDelAno) {
+            console.log(mesesDelAno[i])
+        }
+
+        //Otra forma de hacer para(for of)
+        for (const mes of mesesDelAno) {
+            console.log(mes)
+        }
+
+        //Otra forma de hacer para(for each)
+        mesesDelAno.forEach(mes => {
+            console.log(mes)
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
