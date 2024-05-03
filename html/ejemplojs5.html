@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function mostrarMensaje() {
+            alert('Hola Mundo')
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <button onclick="alert('Hola Como Vas')">Presioname</button>
+    <button onclick="crearUI()">Presioname</button>
+    <script>
+        function crearUI() {
+
+            var h1 = document.createElement('h1')
+            var textoH1 = document.createTextNode('Ejemplo JavaScript')
+            h1.appendChild(textoH1)
+            document.body.appendChild(h1)
+
+        }
+    </script>
+</body>
+
+</html>
