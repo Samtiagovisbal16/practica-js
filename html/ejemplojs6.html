@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/utilidades.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script>
+        function mostrarMnesaje() {
+            alert("Hola mundo")
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button onclick="crearUI()">presioname</button>
+
+    <script>
+        function crearUI() {
+
+            var h1 = crearNodoConTexto('h1', 'Este es un ejemplo de javascript')
+            var p = crearNodoConTexto('p', 'Este es una funcion pra crear un elemento')
+            var imagen = crearNodoImagen('R.jpg', 'Cielo')
+
+            var ol = crearNodo('ol')
+            var liUno = crearNodoConTexto('li', 'Apple')
+            liUno.setAttribute("class", "tipoLetra")
+            var liDos = crearNodoConTexto('li', 'pineApples')
+            var liTres = crearNodoConTexto('li', 'Orange')
+
+            adicionarNodoAContenedor(liUno,ol)
+            adicionarNodoAContenedor(liDos,ol)
+            adicionarNodoAContenedor(liTres,ol)
+
+            adicionarNodoABody(h1)
+            adicionarNodoABody(p)
+            adicionarNodoABody(imagen)
+            adicionarNodoABody(ol)
+
+            // let h1 = document.createElement("h1")
+            // let textoH1 = document.createTextNode("Ejemplo javaScript")
+            // h1.appendChild(textoH1)
+            // document.body.appendChild(h1)
+
+            // let p = document.createElement("p")
+            // let textop = document.createTextNode("Este es un ejemplo de javascript")
+            // p.appendChild(textop)
+            // document.body.appendChild(p)
+        }
+
+    </script>
+
+</body>
+
+</html>
